@@ -22,4 +22,4 @@ else
 fi
 
 CXX=${CXX:-g++}
-$CXX -std=c++17 -O3 -I. -o demo_yolov4 json11.cpp demo_yolov4.cpp -lglog -lvitis_ai_library-xnnpp -lvitis_ai_library-model_config -lprotobuf -lvitis_ai_library-dpu_task ${OPENCV_FLAGS} -lopencv_core -lopencv_video -lopencv_videoio -lopencv_imgproc -lopencv_imgcodecs -lopencv_highgui
+$CXX -std=c++17 -O3 -I. -o demo_yolov4 demo_yolov4.cpp -lglog -lvitis_ai_library-xnnpp -lvitis_ai_library-model_config -lprotobuf -lvitis_ai_library-dpu_task ${OPENCV_FLAGS} -lopencv_core -lopencv_video -lopencv_videoio -lopencv_imgproc -lopencv_imgcodecs -lopencv_highgui
